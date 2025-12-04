@@ -1,150 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shoplift</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="images/head.png" />
-  </head>
-  <body>
-    <div class="navbar">
-      <h3><span>🛍️</span>Shoplift</h3>
 
-      <div class="menus">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shoplift</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/head.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"> 
+</head>
+
+<body>
+  <div class="navbar">
+    <h3><span>🛍️</span>Shoplift</h3>
+
+    <div class="menus">
+      <ul>
+        <li>Home</li>
+        <li>Products</li>
+        <li>Cart</li>
+        <li>WishList</li>
+        <li>
+          <select class="dropdown">
+            <option>Profile</option>
+            <option>My Account</option>
+            <option>Orders</option>
+            <option>Settings</option>
+            <option>Logout</option>
+          </select>
+        </li>
+      </ul>
+    </div>
+    <button class="hamburger">☰</button>
+  </div>
+
+  <div class="flex-section">
+    <div class="emoji-container"></div>
+    <!-- emojis appear here -->
+
+    <h1>Welcome To <span> Shoplift!</span></h1>
+    <p>
+      Groceries, gadgets, and everything in between—delivered in one place.
+    </p>
+    <div class="btn-section">
+      <button class="btn">Order Now</button>
+      <button class="btn">View Products</button>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search for products...">
+        <button class="search-btn">🔍</button>
+      </div>
+  </div>
+
+  <div class="products">
+    <div class="item">
+      <p>Football</p>
+      <img src="images/football.png" alt="" />
+      <p>Price : 1000 $</p>
+
+      <div class="item-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <p>Headphones</p>
+      <img src="images/headphones.png" alt="Headphones" />
+      <p>Price : 1500 $</p>
+
+      <div class="item-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <p>Barca Jersey</p>
+      <img src="images/jersey.png" alt="Apple" />
+      <p>Price : 2550 $</p>
+
+      <div class="item-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <p>Camera</p>
+      <img src="images/camera.png" alt="Camera" />
+      <p>Price : 5000 $</p>
+
+      <div class="item-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <p>Water Bottle</p>
+      <img src="images/waterbottle.png" alt="Bottle" />
+      <p>Price : 200 $</p>
+
+      <div class="item-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="item">
+      <p>Speaker</p>
+      <img src="images/speaker.png" alt="Speaker" />
+      <p>Price : 1800 $</p>
+
+      <div class="item-buttons">
+        <button class="add-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="accordion" id="accordionPanelsStayOpenExample">
+
+    <!-- FAQ 1 -->
+    <div class="accordion-item bg-dark border-light">
+      <h2 class="accordion-header">
+        <button class="accordion-button bg-success text-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#faq1">
+          What is Shoplift?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse show">
+        <div class="accordion-body bg-dark text-light">
+          Shoplift is an online shopping platform that offers groceries, gadgets, clothing, sports items, and more.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 2 -->
+    <div class="accordion-item bg-dark border-light">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#faq2">
+          How long does delivery take?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse">
+        <div class="accordion-body bg-dark text-light">
+          Delivery takes 2–5 business days depending on your location and product availability.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 3 -->
+    <div class="accordion-item bg-dark border-light">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#faq3">
+          What payment methods do you accept?
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse">
+        <div class="accordion-body bg-dark text-light">
+          We accept UPI, credit/debit cards, net banking, and cash on delivery for eligible products.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 4 -->
+    <div class="accordion-item bg-dark border-light">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#faq4">
+          Can I return a product?
+        </button>
+      </h2>
+      <div id="faq4" class="accordion-collapse collapse">
+        <div class="accordion-body bg-dark text-light">
+          Yes, most items are eligible for return within 7–10 days if they remain unused and in original packaging.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 5 -->
+    <div class="accordion-item bg-dark border-light">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#faq5">
+          How do I track my order?
+        </button>
+      </h2>
+      <div id="faq5" class="accordion-collapse collapse">
+        <div class="accordion-body bg-dark text-light">
+          After placing an order, you can track it from your “Orders” section. You’ll receive regular status updates.
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ 6 -->
+    <div class="accordion-item bg-dark border-light">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#faq6">
+          Do you offer customer support?
+        </button>
+      </h2>
+      <div id="faq6" class="accordion-collapse collapse">
+        <div class="accordion-body bg-dark text-light">
+          Yes, our support team is available 24/7 via chat, email, and phone for any queries or assistance.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2><span>🛍️</span> Shoplift</h2>
+        <p>Your all-in-one shopping destination.</p>
+      </div>
+
+      <div class="footer-links">
+        <h5 style="color: rgb(12, 220, 12);">Quick Links</h5>
         <ul>
           <li>Home</li>
           <li>Products</li>
           <li>Cart</li>
-          <li>WishList</li>
-          <li>
-            <select class="dropdown">
-              <option>Profile</option>
-              <option>My Account</option>
-              <option>Orders</option>
-              <option>Settings</option>
-              <option>Logout</option>
-            </select>
-          </li>
+          <li>Wishlist</li>
+          <li>Profile</li>
         </ul>
       </div>
-    </div>
 
-    <div class="flex-section">
-      <div class="emoji-container"></div>
-      <!-- emojis appear here -->
-
-      <h1>Welcome To <span> Shoplift!</span></h1>
-      <p>
-        Groceries, gadgets, and everything in between—delivered in one place.
-      </p>
-      <div class="btn-section">
-        <button class="btn">Order Now</button>
-        <button class="btn">View Products</button>
-      </div>
-    </div>
-
-    <div class="products">
-      <div class="item">
-        <p>Football</p>
-        <img src="images/football.png" alt="" />
-        <p>Price : 1000 $</p>
-
-        <div class="item-buttons">
-          <button class="add-cart">Add to Cart</button>
-          <button class="buy-now">Buy Now</button>
+      <div class="footer-social">
+        <h5 style="color: rgb(4, 255, 4);">Follow Us</h5>
+        <div class="icons">
+          <i class="sm bi bi-instagram"></i>
+          <i class="sm bi bi-twitter"></i>
+          <i class="sm bi bi-facebook"></i>
+          <i class="sm bi bi-linkedin"></i>
         </div>
       </div>
-
-      <div class="item">
-        <p>Headphones</p>
-        <img src="images/headphones.png" alt="Headphones" />
-        <p>Price : 1500 $</p>
-
-        <div class="item-buttons">
-          <button class="add-cart">Add to Cart</button>
-          <button class="buy-now">Buy Now</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <p>Barca Jersey</p>
-        <img src="images/jersey.png" alt="Apple" />
-        <p>Price : 2550 $</p>
-
-        <div class="item-buttons">
-          <button class="add-cart">Add to Cart</button>
-          <button class="buy-now">Buy Now</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <p>Camera</p>
-        <img src="images/camera.png" alt="Camera" />
-        <p>Price : 5000 $</p>
-
-        <div class="item-buttons">
-          <button class="add-cart">Add to Cart</button>
-          <button class="buy-now">Buy Now</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <p>Water Bottle</p>
-        <img src="images/waterbottle.png" alt="Bottle" />
-        <p>Price : 200 $</p>
-
-        <div class="item-buttons">
-          <button class="add-cart">Add to Cart</button>
-          <button class="buy-now">Buy Now</button>
-        </div>
-      </div>
-
-      <div class="item">
-        <p>Speaker</p>
-        <img src="images/speaker.png" alt="Speaker" />
-        <p>Price : 1800 $</p>
-
-        <div class="item-buttons">
-          <button class="add-cart">Add to Cart</button>
-          <button class="buy-now">Buy Now</button>
-        </div>
-      </div>
-    </div>
-
-    <footer class="footer">
-    <div class="footer-content">
-        
-        <div class="footer-brand">
-            <h2><span>🛍️</span> Shoplift</h2>
-            <p>Your all-in-one shopping destination.</p>
-        </div>
-
-        <div class="footer-links">
-            <h3>Quick Links</h3>
-            <ul>
-                <li>Home</li>
-                <li>Products</li>
-                <li>Cart</li>
-                <li>Wishlist</li>
-                <li>Profile</li>
-            </ul>
-        </div>
-
-        <div class="footer-social">
-            <h3>Follow Us</h3>
-            <div class="icons">
-                <span>📘</span>
-                <span>📸</span>
-                <span>🐦</span>
-                <span>▶️</span>
-            </div>
-        </div>
-
     </div>
 
     <p class="copyright">© 2025 Shoplift. All rights reserved.</p>
-</footer>
+  </footer>
 
-  </body>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const menus = document.querySelector(".menus");
+
+    hamburger.addEventListener("click", () => {
+      menus.classList.toggle("active");
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+</body>
+
 </html>
